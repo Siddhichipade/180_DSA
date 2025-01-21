@@ -1,0 +1,3 @@
+Days 2–3:
+Control structures: loops (for, while) and conditional statements.
+Practice: Solve 10 problems involving loops and conditionals.
