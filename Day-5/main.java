@@ -7,9 +7,9 @@ public class main
         {
             for(int j = 1; j <= 8; j++)
             {
-                System.out.print("("+ i + " " + j +")");
+                System.out.print("(" + i + "" + j + ")");
             }
-            System.out.println();
+            System.out.println( " ");
         }
     }
 
