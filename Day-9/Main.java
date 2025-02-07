@@ -1,23 +1,29 @@
-abstract class Animal {
-    // Abstract method (no body)
-    abstract void makeSound();
+class Rectangle {
+    int length, width;
 
-    // Concrete method (has body)
-    void sleep() {
-        System.out.println("Sleeping...");
+    // Default Constructor
+    Rectangle() {
+        length = 10;
+        width = 5;
+    }
+
+    // Parameterized Constructor
+    Rectangle(int l, int w) {
+        length = l;
+        width = w;
+    }
+
+    void area() {
+        System.out.println("Area: " + (length * width));
     }
 }
-class Dog extends Animal {
-    // Providing implementation for the abstract method
-    @Override
-    void makeSound() {
-        System.out.println("Woof Woof!");
-    }
-}
+
 public class Main {
     public static void main(String[] args) {
-        Animal myDog = new Dog(); // Polymorphism
-        myDog.makeSound(); // Calls the implemented method
-        myDog.sleep();     // Calls the concrete method from the abstract class
+        Rectangle r1 = new Rectangle(); // Calls Default Constructor
+        Rectangle r2 = new Rectangle(15, 7); // Calls Parameterized Constructor
+
+        r1.area();
+        r2.area();
     }
 }
